@@ -1,0 +1,20 @@
+{
+  "trips": [
+    {
+      "slug": "lake-blanche-2025",
+      "title": "Lake Blanche",
+      "subtitle": "Big Cottonwood Canyon, Utah",
+      "date": "2025-09-12",
+      "hero": "images/lake-blanche-2025/hero.jpg",
+      "summary_short": "Two nights in the Twin Peaks Wilderness. Granite slabs, alpine water, bear country."
+    },
+    {
+      "slug": "uintas-2024",
+      "title": "Uinta High Lakes",
+      "subtitle": "Mirror Lake Highway, Utah",
+      "date": "2024-08-03",
+      "hero": "images/uintas-2024/hero.jpg",
+      "summary_short": "Three nights chasing trout in the Uintas. First real overnight with the boys."
+    }
+  ]
+}

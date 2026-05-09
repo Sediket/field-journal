@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Field Journal — Trip Log</title>
+  <meta name="description" content="A log of camping trips, gear, and trails.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700;800;900&family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">FJ</span>
+        <span>Field Journal</span>
+      </a>
+      <div class="nav-meta">
+        <span id="trip-count">— Trips Logged</span>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="hero-title">
+        <div class="eyebrow">A Log of Trails, Tents &amp; Tall Tales</div>
+        <h1>Where <span class="underline">we've</span> been.<br>Where we're <span class="underline">going</span>.</h1>
+        <p class="hero-tagline">Trip reports, packing lists, and photographs from a small crew of explorers. Filed from the trail, archived for next time.</p>
+      </div>
+      <div class="hero-stamp">
+        Established<strong>2024</strong>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h2>The Trips</h2>
+      <span class="count" id="trips-counter"></span>
+    </div>
+    <div id="trips" class="trip-grid">
+      <div class="loading">Loading trips…</div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="compass">✦</div>
+    <div>Pack it in. Pack it out. — Field Journal</div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+  <script>renderTripList();</script>
+</body>
+</html>

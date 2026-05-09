@@ -1,0 +1,666 @@
+/* ============================================================
+   FIELD JOURNAL — Camping Trip Log
+   ============================================================ */
+
+:root {
+  --bg: #0f1a16;
+  --bg-2: #162420;
+  --bg-3: #1d2e29;
+  --ink: #f1ead8;
+  --ink-dim: #b8b09a;
+  --ink-faint: #6e6a5b;
+  --rust: #c5532e;
+  --rust-bright: #e26a3f;
+  --tan: #a8845c;
+  --moss: #6b8a5a;
+  --line: #2a3b34;
+  --line-soft: #1f2d28;
+
+  --font-display: 'Big Shoulders Display', 'Impact', sans-serif;
+  --font-body: 'Fraunces', 'Georgia', serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+
+  --max: 1200px;
+  --pad: clamp(1rem, 4vw, 2.5rem);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.6;
+  font-size: 17px;
+  min-height: 100vh;
+  background-image:
+    radial-gradient(ellipse at top, rgba(107, 138, 90, 0.08), transparent 60%),
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'><g fill='none' stroke='%231d2e29' stroke-width='0.6' opacity='0.5'><path d='M0,100 Q50,80 100,100 T200,100'/><path d='M0,120 Q50,100 100,120 T200,120'/><path d='M0,80 Q50,60 100,80 T200,80'/><path d='M0,140 Q50,120 100,140 T200,140'/><path d='M0,60 Q50,40 100,60 T200,60'/></g></svg>");
+  background-attachment: fixed;
+}
+
+a { color: var(--rust-bright); text-decoration: none; }
+a:hover { color: var(--ink); }
+
+img { max-width: 100%; display: block; }
+
+/* ============================================================
+   TYPOGRAPHY
+   ============================================================ */
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  line-height: 1.05;
+  color: var(--ink);
+}
+
+h1 { font-size: clamp(2.5rem, 7vw, 5.5rem); text-transform: uppercase; }
+h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); text-transform: uppercase; }
+h3 { font-size: 1.4rem; text-transform: uppercase; letter-spacing: 0.06em; }
+h4 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--tan); }
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--rust);
+  margin-bottom: 0.75rem;
+}
+
+/* ============================================================
+   HEADER / NAV
+   ============================================================ */
+
+.site-header {
+  border-bottom: 1px solid var(--line);
+  padding: 1.25rem var(--pad);
+  position: sticky;
+  top: 0;
+  background: rgba(15, 26, 22, 0.92);
+  backdrop-filter: blur(12px);
+  z-index: 50;
+}
+
+.site-header-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.brand-mark {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--rust);
+  color: var(--rust);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  transform: rotate(-3deg);
+}
+
+.nav-meta {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.nav-meta a { color: var(--ink-dim); }
+
+/* ============================================================
+   HERO
+   ============================================================ */
+
+.hero {
+  padding: clamp(3rem, 8vw, 6rem) var(--pad) clamp(2rem, 5vw, 4rem);
+  max-width: var(--max);
+  margin: 0 auto;
+  border-bottom: 1px solid var(--line);
+  position: relative;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2rem;
+  align-items: end;
+}
+
+.hero-title {
+  position: relative;
+}
+
+.hero-title h1 {
+  font-style: italic;
+}
+
+.hero-title h1 .underline {
+  display: inline-block;
+  background: linear-gradient(transparent 60%, var(--rust) 60%, var(--rust) 80%, transparent 80%);
+  padding: 0 0.1em;
+  font-style: normal;
+}
+
+.hero-tagline {
+  font-size: 1.15rem;
+  color: var(--ink-dim);
+  max-width: 520px;
+  margin-top: 1.5rem;
+  line-height: 1.5;
+}
+
+.hero-stamp {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--ink-faint);
+  border: 1.5px solid var(--line);
+  padding: 0.75rem 1rem;
+  text-align: right;
+  white-space: nowrap;
+  transform: rotate(2deg);
+}
+
+.hero-stamp strong {
+  color: var(--tan);
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  font-family: var(--font-display);
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 700px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-stamp { justify-self: start; transform: none; }
+}
+
+/* ============================================================
+   TRIP GRID (HOME)
+   ============================================================ */
+
+.section {
+  padding: clamp(2rem, 5vw, 4rem) var(--pad);
+  max-width: var(--max);
+  margin: 0 auto;
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.section-head .count {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--ink-faint);
+  letter-spacing: 0.15em;
+}
+
+.trip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.trip-card {
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.trip-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--rust);
+  box-shadow: 0 12px 32px -12px rgba(197, 83, 46, 0.4);
+}
+
+.trip-card-image {
+  aspect-ratio: 4 / 3;
+  background: var(--bg-3);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-bottom: 1px solid var(--line);
+}
+
+.trip-card-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 50%, rgba(15, 26, 22, 0.7));
+}
+
+.trip-card-no-image {
+  display: grid;
+  place-items: center;
+  color: var(--ink-faint);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.trip-card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.trip-card-date {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--rust);
+}
+
+.trip-card-title {
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  color: var(--ink);
+}
+
+.trip-card-location {
+  font-size: 0.95rem;
+  color: var(--ink-dim);
+  font-style: italic;
+}
+
+.trip-card-summary {
+  color: var(--ink-dim);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-top: auto;
+}
+
+.trip-card-footer {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line-soft);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--tan);
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ============================================================
+   TRIP DETAIL PAGE
+   ============================================================ */
+
+.trip-hero {
+  height: clamp(40vh, 60vh, 600px);
+  background: var(--bg-3);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-bottom: 1px solid var(--line);
+}
+
+.trip-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(15,26,22,0.3) 0%, rgba(15,26,22,0.95));
+}
+
+.trip-hero-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--pad);
+  max-width: var(--max);
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.trip-hero-content .eyebrow {
+  margin-bottom: 1rem;
+}
+
+.back-link {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.back-link::before { content: '← '; }
+
+.trip-meta-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: var(--bg-2);
+}
+
+.meta-stat {
+  padding: 1.25rem var(--pad);
+  border-right: 1px solid var(--line-soft);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+
+.meta-stat:last-child { border-right: none; }
+
+.meta-stat-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: 0.4rem;
+}
+
+.meta-stat-value {
+  color: var(--ink);
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+}
+
+/* TRIP SECTIONS */
+
+.trip-section {
+  padding: clamp(2.5rem, 5vw, 4rem) var(--pad);
+  max-width: var(--max);
+  margin: 0 auto;
+  border-bottom: 1px solid var(--line);
+}
+
+.trip-section:last-child { border-bottom: none; }
+
+.trip-section-head {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.trip-section-head h2 {
+  display: inline-block;
+}
+
+.trip-section-head .num {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--rust);
+  letter-spacing: 0.15em;
+}
+
+/* Map */
+
+#map {
+  height: 400px;
+  border: 1px solid var(--line);
+  background: var(--bg-2);
+}
+
+/* Checklist */
+
+.checklist {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.checklist-category h4 {
+  border-bottom: 2px solid var(--rust);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  color: var(--ink);
+}
+
+.checklist-items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.checklist-items li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px dashed var(--line-soft);
+}
+
+.checklist-items .box {
+  width: 14px;
+  height: 14px;
+  border: 1.5px solid var(--ink-faint);
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  font-size: 0.7rem;
+}
+
+.checklist-items .checked .box {
+  border-color: var(--moss);
+  color: var(--moss);
+  background: rgba(107, 138, 90, 0.1);
+}
+
+.checklist-items .checked .box::after {
+  content: '✓';
+  font-weight: 700;
+}
+
+.checklist-items .checked span:not(.box) {
+  color: var(--ink-faint);
+  text-decoration: line-through;
+  text-decoration-color: var(--ink-faint);
+}
+
+/* Gallery */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.5rem;
+}
+
+.gallery img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  border: 1px solid var(--line);
+}
+
+.gallery img:hover { opacity: 0.8; }
+
+/* Lightbox */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 26, 22, 0.97);
+  display: none;
+  place-items: center;
+  z-index: 100;
+  cursor: pointer;
+  padding: 2rem;
+}
+
+.lightbox.active { display: grid; }
+
+.lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border: 1px solid var(--line);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+  background: none;
+  border: 1px solid var(--line);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+/* Blog / Summary content */
+
+.blog {
+  max-width: 720px;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.blog h2 { margin-top: 2.5rem; margin-bottom: 1rem; }
+.blog h3 { margin-top: 2rem; margin-bottom: 0.75rem; }
+.blog p { margin-bottom: 1.25rem; color: var(--ink-dim); }
+.blog p:first-of-type::first-letter {
+  font-family: var(--font-display);
+  font-size: 4rem;
+  float: left;
+  line-height: 0.85;
+  margin: 0.4rem 0.6rem 0 0;
+  color: var(--rust);
+  font-weight: 800;
+}
+.blog ul, .blog ol { margin: 1rem 0 1.5rem 1.5rem; color: var(--ink-dim); }
+.blog li { margin-bottom: 0.5rem; }
+.blog blockquote {
+  border-left: 3px solid var(--rust);
+  padding-left: 1.25rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: var(--ink);
+}
+.blog code {
+  font-family: var(--font-mono);
+  background: var(--bg-2);
+  padding: 0.1em 0.4em;
+  font-size: 0.9em;
+  color: var(--tan);
+}
+.blog hr {
+  border: none;
+  border-top: 1px solid var(--line);
+  margin: 2.5rem 0;
+}
+
+/* Crew chips */
+
+.crew {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.crew-chip {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 1px solid var(--line);
+  padding: 0.4rem 0.8rem;
+  color: var(--tan);
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 3rem var(--pad) 2rem;
+  margin-top: 4rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  text-align: center;
+}
+
+.site-footer .compass {
+  font-size: 1.5rem;
+  color: var(--rust);
+  margin-bottom: 1rem;
+  letter-spacing: normal;
+}
+
+/* ============================================================
+   LOADING / EMPTY STATES
+   ============================================================ */
+
+.loading {
+  text-align: center;
+  padding: 4rem 2rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.error-state {
+  border: 1px dashed var(--rust);
+  padding: 2rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--rust);
+  text-align: center;
+}

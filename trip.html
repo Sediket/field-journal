@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Trip — Field Journal</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700;800;900&family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Leaflet for map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+
+  <!-- Marked for markdown rendering -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
+
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">FJ</span>
+        <span>Field Journal</span>
+      </a>
+      <div class="nav-meta">
+        <a href="index.html">← All Trips</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="trip-content">
+    <div class="loading">Loading trip…</div>
+  </main>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close">✕ Close</button>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <footer class="site-footer">
+    <div class="compass">✦</div>
+    <div>Pack it in. Pack it out. — Field Journal</div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+  <script>
+    window.addEventListener('load', () => {
+      // Wait briefly for deferred scripts (Leaflet, marked) to be ready
+      const tryRender = () => {
+        if (window.L && window.marked) {
+          renderTripDetail();
+        } else {
+          setTimeout(tryRender, 50);
+        }
+      };
+      tryRender();
+    });
+  </script>
+</body>
+</html>
