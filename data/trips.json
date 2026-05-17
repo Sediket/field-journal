@@ -1,6 +1,14 @@
 {
   "trips": [
     {
+      "slug": "north-fork-eden-2026",
+      "title": "North Fork",
+      "subtitle": "Eden, Utah",
+      "date": "2026-05-15",
+      "hero": "images/north-fork-eden-2026/hero.jpg",
+      "summary_short": "Hilltop camp with 360° views above the North Fork River Trail. Spring runoff, rocky terrain, and Keishin slipping three times."
+    },
+    {
       "slug": "lake-blanche-2025",
       "title": "Lake Blanche",
       "subtitle": "Big Cottonwood Canyon, Utah",
