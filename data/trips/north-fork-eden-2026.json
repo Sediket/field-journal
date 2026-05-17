@@ -10,8 +10,8 @@
     "name": "North Fork River Trail",
     "city": "Eden",
     "state": "UT",
-    "lat": 41.3874,
-    "lng": -111.9137
+    "lat": 41.392822897567015,
+    "lng": -111.91206694130182
   },
   "crew": ["Bradley", "Dad", "Perrin", "Keishin"],
   "hero": "images/north-fork-eden-2026/hero.jpg",
@@ -74,6 +74,8 @@
     "images/north-fork-eden-2026/20260515_190553.jpg",
     "images/north-fork-eden-2026/20260515_202332.jpg",
     "images/north-fork-eden-2026/20260515_225927.jpg",
-    "images/north-fork-eden-2026/20260516_084924.jpg"
+    "images/north-fork-eden-2026/20260516_084924.jpg",
+    "images/north-fork-eden-2026/Screenshot 2026-05-16 193607.png",
+    "images/north-fork-eden-2026/Screenshot 2026-05-16 193632.png"
   ]
 }
