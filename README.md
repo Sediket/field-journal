@@ -21,10 +21,10 @@ A static site for tracking camping/backpacking trips. Each trip has a location, 
 ├── data/
 │   ├── trips.json          # Master index of trips
 │   └── trips/
-│       ├── lake-blanche-2025.json
+│       ├── snow-basin-2025.json
 │       └── uintas-2024.json
 ├── images/
-│   ├── lake-blanche-2025/  # One folder per trip
+│   ├── snow-basin-2025/  # One folder per trip
 │   └── uintas-2024/
 ├── .github/workflows/
 │   └── deploy.yml          # Validates JSON + deploys to Pages
