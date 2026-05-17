@@ -1,6 +1,14 @@
 {
   "trips": [
     {
+      "slug": "south-skyline-2026",
+      "title": "South Skyline Trail",
+      "subtitle": "Ogden Valley Overlook, Utah",
+      "date": "2026-04-17",
+      "hero": "images/south-skyline-2026/hero.jpg",
+      "summary_short": "Two miles to the ridgeline above Ogden Valley with Dad and Keishin. City lights on both sides, and a rare calm night on a usually-windy summit."
+    },
+    {
       "slug": "north-fork-eden-2026",
       "title": "North Fork",
       "subtitle": "Eden, Utah",
