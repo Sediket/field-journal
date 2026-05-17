@@ -16,7 +16,7 @@
   "crew": ["Dad", "Perrin", "Keishin"],
   "hero": "images/north-fork-eden-2026/hero.jpg",
   "stats": {
-    "distance_miles": 4,
+    "distance_miles": 5.2,
     "nights": 1
   },
   "checklist": [
