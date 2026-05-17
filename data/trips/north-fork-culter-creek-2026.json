@@ -1,0 +1,64 @@
+{
+  "slug": "north-fork-culter-creek-2026",
+  "title": "North Fork Culter Creek",
+  "subtitle": "Eden, Utah",
+  "dates": {
+    "start": "2026-04-24",
+    "end": "2026-04-25"
+  },
+  "location": {
+    "name": "North Fork Culter Creek",
+    "city": "Eden",
+    "state": "UT",
+    "lat": 41.38575981388928,
+    "lng": -111.92909605372085
+  },
+  "crew": ["Perrin", "Keishin", "Dad"],
+  "hero": "images/north-fork-culter-creek-2026/hero.jpg",
+  "stats": {
+    "distance_miles": 3.5,
+    "nights": 1
+  },
+  "checklist": [
+    {
+      "category": "Shelter & Sleep",
+      "items": [
+        { "name": "Tent", "checked": true },
+        { "name": "Sleeping bags (rated for cold)", "checked": true },
+        { "name": "Sleeping pads", "checked": true },
+        { "name": "Bivy sack (verified vapor-permeable)", "checked": false },
+        { "name": "Extra insulating layer for sleeping", "checked": false }
+      ]
+    },
+    {
+      "category": "Food & Water",
+      "items": [
+        { "name": "Water filter", "checked": true },
+        { "name": "Camp stove + fuel", "checked": true },
+        { "name": "Hot breakfast food", "checked": true },
+        { "name": "Hot chocolate", "checked": false }
+      ]
+    },
+    {
+      "category": "Comfort & Camp",
+      "items": [
+        { "name": "Base layer (thermals)", "checked": true },
+        { "name": "Mid layer (puffy jacket or fleece)", "checked": true },
+        { "name": "Top layer (coat or shell)", "checked": true },
+        { "name": "Extra coat / spare insulation layer", "checked": false },
+        { "name": "Gloves", "checked": false },
+        { "name": "Hat / balaclava", "checked": false },
+        { "name": "Firestarter + dry kindling", "checked": false }
+      ]
+    },
+    {
+      "category": "Safety & Repair",
+      "items": [
+        { "name": "First aid kit", "checked": true },
+        { "name": "Headlamp", "checked": true }
+      ]
+    }
+  ],
+  "summary": "## The Hike In\n\nThree and a half miles into North Fork Culter Creek in late April. Snow on the trail and mud underfoot — classic early spring conditions in the Wasatch. The kind of hike where you earn the campsite.\n\n## Camp\n\nCold from the moment we arrived. Frost set in hard overnight. Keishin and Dad in the tent; Perrin in a bivy sack.\n\n## The Night\n\nPerrin's bivy sack turned against him. Frost built up on the inside as the night wore on, soaking into his sleeping bag and leaving him freezing. He stuck it out until around 5 AM, then got up to make a fire.\n\nKeishin — without being asked — got up with him. He handed over a spare coat and helped get the fire going. The two of them sat by it together for the rest of the morning, talking and staying warm while the camp slowly woke up around them.\n\nDad wasn't much better off in the tent. But once Keishin climbed out of his sleeping bag, Dad quietly pulled it over and used it to get a few more hours of decent sleep. You take warmth where you find it.\n\n## Morning\n\nFrost on everything. The fire Perrin and Keishin built was the best thing about the morning. Cold hands, steaming breath, and the kind of camaraderie that only comes from being cold together.\n\n## Lessons for Next Time\n\n- **Don't use a bivy in freezing temps without a vapor-permeable shell** — moisture has nowhere to go, frost builds inside, and it becomes a wet trap\n- Bring extra insulation layers specifically for sleeping — more than you think you'll need\n- Pack firestarter and dry kindling; don't count on finding it in early spring\n- Hot chocolate is not optional in April\n- Go back in warmer conditions — the terrain and canyon are worth seeing again",
+  "gallery": []
+}
