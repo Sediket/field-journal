@@ -1,0 +1,48 @@
+{
+  "slug": "snow-basin-2026",
+  "title": "Snow Basin Overnight",
+  "subtitle": "Snow Basin, Utah — May Campout with the Crew",
+  "dates": {
+    "start": "2026-05-08",
+    "end": "2026-05-09"
+  },
+  "location": {
+    "name": "Snow Basin, Utah",
+    "lat": 41.22482943886272,
+    "lng": -111.865601744296
+  },
+  "crew": ["Dad", "Keishin", "Perrin", "Cole", "Alex"],
+  "hero": "images/snow-basin-2026/hero.jpg",
+  "stats": {
+    "distance_miles": null,
+    "elevation_ft": null,
+    "nights": 1
+  },
+  "checklist": [
+    {
+      "category": "Shelter & Sleep",
+      "items": [
+        { "name": "3-person tent", "checked": true },
+        { "name": "2-person tent", "checked": true },
+        { "name": "Sleeping bags", "checked": true },
+        { "name": "Sleeping pads", "checked": true }
+      ]
+    },
+    {
+      "category": "Food & Cooking",
+      "items": [
+        { "name": "Hotdogs", "checked": true },
+        { "name": "Frozen meals with chicken", "checked": true },
+        { "name": "Firewood & kindling", "checked": true }
+      ]
+    },
+    {
+      "category": "Camp Fun",
+      "items": [
+        { "name": "Cards (Alex)", "checked": true }
+      ]
+    }
+  ],
+  "summary": "## Snow Basin Overnight — May 8–9, 2026\n\nGreat turnout for this one. Five strong: Dad, Keishin, Perrin, Cole, and Alex. We set up two tents — a three-man and a two-man — and settled into camp easy. The hike in was short, which made it a solid pick for the newer folks in the group.\n\n## Food\n\nHotdogs over the fire and frozen meals with chicken. Simple and it hit the spot — no complaints from anyone.\n\n## Camp Life\n\nAlex came through with a deck of cards and got a game going. Perrin, Cole, Alex, and Keishin all played and had a good time with it.\n\n## The Fire Situation\n\nCole and Alex volunteered to build the fire — first real campfire experience for both of them. They kicked things off by putting the kindling on top of the wood instead of underneath, which made for a long troubleshooting session and plenty of jokes at their expense. After much deliberation and creative problem-solving, they cracked the code and got a solid fire going. A rite of passage.\n\n## Overall\n\nEveryone had a great time. Good crew, good food, short hike that kept things approachable for first-timers. One of those trips where everything just works.",
+  "gallery": []
+}
