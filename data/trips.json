@@ -1,6 +1,14 @@
 {
   "trips": [
     {
+      "slug": "desolation-trail-2026",
+      "title": "Desolation Trail",
+      "subtitle": "Wasatch Mountains, Utah",
+      "date": "2026-05-29",
+      "hero": "images/desolation-trail-2026/hero.png",
+      "summary_short": "An 18-mile, two-night trek along the Desolation Trail. Rugged climbs, stunning alpine views, and a wild storm that tested our gear."
+    },
+    {
       "slug": "snow-basin-2026",
       "title": "Snow Basin Overnight",
       "subtitle": "Snow Basin, Utah",
