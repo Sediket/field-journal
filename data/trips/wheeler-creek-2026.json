@@ -1,0 +1,53 @@
+{
+  "slug": "wheeler-creek-2026",
+  "title": "Wheeler Creek",
+  "subtitle": "Wheeler Canyon, Utah — A Late-Night Detour",
+  "dates": {
+    "start": "2026-06-05",
+    "end": "2026-06-06"
+  },
+  "location": {
+    "name": "Wheeler Canyon",
+    "city": "Ogden",
+    "state": "UT",
+    "lat": 41.24420580388526,
+    "lng": -111.83441864870395
+  },
+  "crew": ["Dad", "Lina", "Keishin", "Perrin"],
+  "hero": "images/wheeler-creek-2026/hero.jpg",
+  "stats": {
+    "distance_miles": 1.0,
+    "elevation_ft": null,
+    "nights": 1
+  },
+  "checklist": [
+    {
+      "category": "Shelter & Sleep",
+      "items": [
+        { "name": "2-person tents (x2)", "checked": true },
+        { "name": "Sleeping bags", "checked": true },
+        { "name": "Nemo down sleeping bag (Dad)", "checked": true },
+        { "name": "Nemo sleeping pad (Keishin)", "checked": true },
+        { "name": "Klymit inflatable sleeping pad (Lina)", "checked": true },
+        { "name": "Exped sleeping pad (Dad)", "checked": true }
+      ]
+    },
+    {
+      "category": "Food & Water",
+      "items": [
+        { "name": "Camp stove & fuel", "checked": true },
+        { "name": "Smith's Ramen (Keishin)", "checked": true },
+        { "name": "Water for boiling", "checked": true }
+      ]
+    },
+    {
+      "category": "Comfort & Camp",
+      "items": [
+        { "name": "Headlamps & flashlights", "checked": true },
+        { "name": "Kindle (Dad)", "checked": true }
+      ]
+    }
+  ],
+  "summary": "## The Pivoted Plan\n\nOur original plan was to head up to the Sardine Loop in Snow Basin for a quick overnight campout. But mountain plans are subject to change. Upon arrival, we found the access road closed, forcing a quick rethink of our options. It was already late — around 8:00 PM — and we needed a backup fast.\n\nDad (who remembered a spot from hiking and mountain biking some 5–7 years back) suggested a trail next to Wheeler Creek in Wheeler Canyon. It was a new camping spot for the crew, but with daylight fading fast, we pivoted and headed that way.\n\n## Setting Camp in the Dark\n\nBy the time we hiked the one mile in and arrived at the creek side, it was pitch black. We pulled out our headlamps and flashlights, navigating the shadows of the dense forest to pitch our two tents. Lina (Dad's daughter) set up with Dad in one tent, while Keishin and Perrin shared the second tent.\n\nBecause we had left so late, everyone had already eaten dinner before heading out — except for Keishin. To make sure he didn't starve, we had stopped by Smith’s grocery store on the drive up to grab some instant Ramen. Once camp was established, we fired up the camp stove, boiled some water, and got him a hot meal.\n\n## Canyon Night & Late Laughter\n\nThe site was incredibly dark, tucked down at the bottom of the canyon and shrouded by a thick canopy of trees. There was no moon in the sky to break the darkness. The nearby creek filled the air with a steady, comfortable hum — a relaxing backdrop to the night.\n\nAs Dad and Lina turned in early, Dad read his Kindle (likely staying up later than everyone else in the end). Lina fell asleep almost as soon as she lay down. Meanwhile, in the other tent, Perrin and Keishin stayed up late laughing and joking, clearly having a great time.\n\nIt was a very comfortable night. The temperature hovered around 61°F. Keishin got to test out our new Nemo sleeping pad and reported that it was exceptionally comfortable. Lina had no issues on the old Klymit inflatable pad, while Dad slept on his Exped pad paired with a Nemo down sleeping bag, which proved so warm he had to cool off during the night.\n\n## Sleeping In & Canyon Shade\n\nThe morning was beautiful. Because we were deep in the canyon under the trees, the canyon walls kept the sun from hitting us directly, giving us plenty of morning shade and letting us sleep in.\n\nAs the morning woke up, we could hear the occasional hiker and mountain biker passing along the nearby main trail, but they were far enough and screened by the trees that we felt completely secluded.\n\nLina spotted some moths flutter by and dubbed them \"night butterflies.\" We also noticed some large ants roaming around the campsite, though they weren't bothersome.\n\n## The Passenger Bug Incident\n\nAfter packing up and hiking the mile back to the car in the morning (which is when we snapped the photo of the trail), we had a funny moment.\n\nWe had all loaded into the car and were ready to drive home when Dad looked down at his hand and saw a massive, inch-long bug sitting right below his thumb. He squeaked, freaked out, and shook his hand — only to shake the bug directly over Lina! Lina didn't even notice, but we all got out of the car to search for the mystery insect. We couldn't find it anywhere, so we got back in.\n\nPartway through the drive home, Keishin spotted it. We pulled over, and Dad harmlessly flicked it out of the car. We still don't know what kind of bug it was, but it made for a memorable end to a fantastic last-minute detour.",
+  "gallery": []
+}
