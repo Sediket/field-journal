@@ -3,8 +3,8 @@
   "title": "Desolation Trail",
   "subtitle": "Wasatch Mountains, Utah",
   "dates": {
-    "start": "2026-05-29",
-    "end": "2026-05-31"
+    "start": "2026-06-11",
+    "end": "2026-06-13"
   },
   "location": {
     "name": "Desolation Trail #159",
@@ -14,7 +14,7 @@
     "lng": -111.602560930512
   },
   "crew": ["Dad", "Perrin", "Keishin"],
-  "hero": "images/desolation-trail-2026/hero.png",
+  "hero": "images/desolation-trail-2026/map.png",
   "stats": {
     "distance_miles": 18.0,
     "elevation_ft": 4080,
@@ -24,43 +24,55 @@
     {
       "category": "Shelter & Sleep",
       "items": [
-        { "name": "3-person backpacking tent", "checked": true },
-        { "name": "Sleeping bags", "checked": true },
-        { "name": "Sleeping pads", "checked": true },
-        { "name": "Pillows", "checked": true },
-        { "name": "Ground tarp", "checked": true }
+        { "name": "Tent", "checked": false },
+        { "name": "Sleeping bag (40°F)", "checked": false },
+        { "name": "Sleeping pad", "checked": false },
+        { "name": "Ground tarp", "checked": false },
+        { "name": "Camping pillow", "checked": false }
       ]
     },
     {
       "category": "Food & Water",
       "items": [
-        { "name": "Gravity water filter", "checked": true },
-        { "name": "Camp stove & fuel canister", "checked": true },
-        { "name": "Freeze-dried backpacking meals", "checked": true },
-        { "name": "Double-bag all liquid food", "checked": true },
-        { "name": "Hot chocolate packets", "checked": true }
+        { "name": "2 breakfasts", "checked": false },
+        { "name": "2 lunches", "checked": false },
+        { "name": "2 dinners", "checked": false },
+        { "name": "Snacks", "checked": false },
+        { "name": "Camping stove", "checked": false },
+        { "name": "Water bottles", "checked": false },
+        { "name": "Water filter", "checked": false },
+        { "name": "Bear can", "checked": false }
       ]
     },
     {
-      "category": "Comfort & Camp",
+      "category": "Clothing",
       "items": [
-        { "name": "Base layer (thermals)", "checked": true },
-        { "name": "Mid layer (puffy jacket)", "checked": true },
-        { "name": "Top layer (rain shell)", "checked": true },
-        { "name": "Warm gloves", "checked": true },
-        { "name": "Headlamps & extra batteries", "checked": true },
-        { "name": "Camp chairs", "checked": false }
+        { "name": "Base layer (thermals)", "checked": false },
+        { "name": "Mid layer (fleece)", "checked": false },
+        { "name": "Top layer (jacket/coat)", "checked": false },
+        { "name": "Sunscreen", "checked": false }
+      ]
+    },
+    {
+      "category": "Gear & Comfort",
+      "items": [
+        { "name": "Backpack", "checked": false },
+        { "name": "Trekking poles", "checked": false },
+        { "name": "Head-mounted flashlight", "checked": false },
+        { "name": "Extra batteries", "checked": false },
+        { "name": "Entertainment", "checked": false }
       ]
     },
     {
       "category": "Safety & Repair",
       "items": [
-        { "name": "First aid kit", "checked": true },
-        { "name": "Bear spray", "checked": true },
-        { "name": "Multi-tool & repair tape", "checked": true }
+        { "name": "First aid", "checked": false },
+        { "name": "Bear spray", "checked": false },
+        { "name": "Multi-tool", "checked": false },
+        { "name": "Repair tape", "checked": false }
       ]
     }
   ],
-  "summary": "## The Hike In\n\nEighteen miles across three days, climbing over 4,000 feet of elevation gain along the rugged Desolation Trail #159. The classic crew—Dad, Perrin, and Keishin—shouldered loaded backpacking packs at the trailhead, ready for a true multi-day Wasatch adventure. The initial climb was a steady, relentless grind through groves of greening aspens and sagebrush slopes, with the Salt Lake Valley sprawling out wide and hazy behind us.\n\nBy the time we reached the high ridgeline on the afternoon of Day 1, our legs were burning, but the rewards were immediate. We pitched our tent on a small, relatively flat clearing overlooking the massive mountain drainages, with the city lights beginning to sparkle thousands of feet below as dusk settled.\n\n## The Ridge Camp & The Sunset\n\nThere is nothing quite like sleeping on a high mountain crest. Day 2 started with a quiet sunrise that painted the eastern peaks in shades of brilliant gold and pink. After a hot breakfast, we continued along the ridgeline, traversing the high trail toward Desolation Lake. The terrain here is exposed and rugged, offering stunning 360-degree views of the Wasatch Range.\n\n## The Afternoon Storm\n\nMountain weather does not care about your plans. In the early afternoon of Day 2, just as we were approaching the alpine basin near the lake, the sky turned a bruised, deep purple. The temperature plummeted fifteen degrees in a matter of minutes. Then came the wind, followed immediately by a fierce mountain storm throwing rain and pea-sized hail at us.\n\nWe scrambled to pitch the tent, our hands freezing as we fought the wind to stake it down. We threw our packs inside and tumbled in after them, huddled together as the storm lashed the rainfly. \n\nThis was when Keishin pulled off a legendary maneuver. While the storm roared outside, he fired up the camp stove under the shelter of the tent vestibule and brewed a batch of piping hot chocolate. Clutching warm mugs in our cold hands as the hail drummed against the fabric was an instant morale saver. What could have been a cold, miserable afternoon turned into one of the coziest, most memorable parts of the trip.\n\n## Waking to Fresh Dusting\n\nBy morning of Day 3, the storm had fully passed, leaving behind a crisp, perfectly clear blue sky and a light dusting of fresh snow on the highest peaks. The air was incredibly clean. We packed up our damp gear, boiled water for one last round of hot coffee and oatmeal, and began the long, winding descent back down the canyon.\n\n## Lessons Learned\n\n- **Pitching speed matters.** Being able to get the tent up in under three minutes is the difference between dry gear and a soaked sleeping bag.\n- **Hot chocolate is a vital survival item.** Never underestimate the power of a hot, sweet drink to completely shift the camp atmosphere during a storm.\n- **Trekking poles are highly recommended.** 18 miles and 4,000+ feet of descent will remind you exactly where your knees are. Pack them next time.\n- **Check the mountain forecasts frequently.** High-altitude microclimates can generate storms that don't show up on standard valley forecasts.",
-  "gallery": []
+  "summary": "> ⛺ **The adventure is still pending.** This one hasn't happened yet — the trail's been mapped, the packs aren't loaded, and the story is yet to be written. Check back after June 13 to find out how it actually went. 🏔️\n\n## The Plan\n\nA two-night out-and-back to the lake, with a summit day hike in the middle. Three days, easy pace, no rush.\n\n## Day 1 — Thursday\n\n- Eat a good breakfast before heading out\n- Drive down to the trailhead\n- Hike in about **6 miles to the lake**\n- Set up camp and have lunch\n- Enjoy the rest of the day at the lake\n- Dinner at camp, then sleep\n\n## Day 2 — Friday\n\n- Breakfast at camp\n- Leave the packs behind for a day hike up to **Silver Peak — roughly 4 miles up and 4 miles back** (all distances are estimates)\n- Head back to camp for lunch\n- Take it easy and enjoy the lake\n- Dinner at camp, then sleep\n\n## Day 3 — Saturday\n\n- Breakfast at camp\n- Pack up camp\n- Hike back out — about **6 miles** to the trailhead",
+  "gallery": ["images/desolation-trail-2026/map.png"]
 }

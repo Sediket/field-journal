@@ -523,6 +523,20 @@ h4 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.12em; color: 
 
 .gallery img:hover { opacity: 0.8; }
 
+/* Single-image gallery: show full image uncropped at a sane size */
+.gallery-single {
+  grid-template-columns: 1fr;
+}
+
+.gallery-single img {
+  aspect-ratio: auto;
+  object-fit: contain;
+  width: auto;
+  max-width: 100%;
+  max-height: 70vh;
+  margin: 0 auto;
+}
+
 /* Lightbox */
 
 .lightbox {

@@ -206,7 +206,7 @@ async function renderTripDetail() {
             <span class="num">05</span>
             <h2>The Photos</h2>
           </div>
-          <div class="gallery">
+          <div class="gallery ${trip.gallery.length === 1 ? 'gallery-single' : ''}">
             ${trip.gallery.map(src => `<img src="${safeText(src)}" alt="" loading="lazy">`).join('')}
           </div>
         </section>`
